@@ -3,8 +3,8 @@ body {
 }
 
 .container {
+  width: 728px;
   margin: 30px auto;
-  width: 500px;
 }
 
 .menu {
@@ -12,35 +12,43 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  letter-spacing: 1px;
 }
 
-.menu li a {
-  width: 100px;
+.menu a {
+  width: 180px;
   display: inline-block;
   text-align: center;
+  text-decoration: none;
   padding: 8px 0;
   color: #333;
-  text-decoration: none;
   border-radius: 4px 4px 0 0;
 }
-.menu li a.active {
-  background: #333;
+
+.menu a.active {
   color: #fff;
+  background: #333;
 }
 
-.menu li a:not(.active):hover {
+.menu a.left {
+  display: flex;
+  padding-left: 8px;
+}
+
+.menu a:not(.active):hover {
   opacity: 0.5;
   transition: opacity 0.4s;
 }
 
 .content.active {
-  background: #333;
   color: #fff;
-  height: 150px;
-  padding: 12px;
+  background: #333;
   display: block;
+  min-height: 150px;
 }
 
 .content {
   display: none;
+  padding: 12px;
+  letter-spacing: 3px;
 }
